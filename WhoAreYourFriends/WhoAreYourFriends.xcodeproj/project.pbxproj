@@ -14,47 +14,8 @@
 		2F28B29F1D68B6FA0010C537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28B29D1D68B6FA0010C537 /* LaunchScreen.storyboard */; };
 		2F28B2A71D68CA670010C537 /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28B2A61D68CA670010C537 /* HTTPHelper.swift */; };
 		2F28B2A81D68D1630010C537 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28B2941D68B6FA0010C537 /* FirstViewController.swift */; };
-		2F28B2B81D69106C0010C537 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F28B2B11D690FFB0010C537 /* Charts.framework */; };
-		2F28B2B91D69106C0010C537 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F28B2B11D690FFB0010C537 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D7CC3E2734419A2B8DA365D2 /* Pods_WhoAreYourFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59303AAECC524BCD8287DD8 /* Pods_WhoAreYourFriends.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2F28B2B01D690FFB0010C537 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F28B2A91D690FFB0010C537 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
-			remoteInfo = "Charts-iOS";
-		};
-		2F28B2B21D690FFB0010C537 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F28B2A91D690FFB0010C537 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
-			remoteInfo = "Charts-TV";
-		};
-		2F28B2B41D690FFB0010C537 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F28B2A91D690FFB0010C537 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
-			remoteInfo = "Charts-OSX";
-		};
-		2F28B2B61D690FFB0010C537 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F28B2A91D690FFB0010C537 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
-			remoteInfo = ChartsTests;
-		};
-		2F28B2BA1D69106C0010C537 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2F28B2A91D690FFB0010C537 /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
-			remoteInfo = "Charts-iOS";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2F28B2BC1D69106C0010C537 /* Embed Frameworks */ = {
@@ -63,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2F28B2B91D69106C0010C537 /* Charts.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,7 +40,10 @@
 		2F28B29E1D68B6FA0010C537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F28B2A01D68B6FA0010C537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F28B2A61D68CA670010C537 /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
-		2F28B2A91D690FFB0010C537 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = ../../../Charts/Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		2F28B2BE1D691CC80010C537 /* WhoAreYourFriends-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhoAreYourFriends-Bridging-Header.h"; sourceTree = "<group>"; };
+		5E1769937855E4F4004EF5F7 /* Pods-WhoAreYourFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoAreYourFriends.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoAreYourFriends/Pods-WhoAreYourFriends.debug.xcconfig"; sourceTree = "<group>"; };
+		BD4C4AC0220A9A1B9BF4F0A5 /* Pods-WhoAreYourFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoAreYourFriends.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhoAreYourFriends/Pods-WhoAreYourFriends.release.xcconfig"; sourceTree = "<group>"; };
+		C59303AAECC524BCD8287DD8 /* Pods_WhoAreYourFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoAreYourFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,19 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F28B2B81D69106C0010C537 /* Charts.framework in Frameworks */,
+				D7CC3E2734419A2B8DA365D2 /* Pods_WhoAreYourFriends.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BDBCDAA9A3FAA82D6EDB4D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C59303AAECC524BCD8287DD8 /* Pods_WhoAreYourFriends.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F28B2861D68B6FA0010C537 = {
 			isa = PBXGroup;
 			children = (
-				2F28B2A91D690FFB0010C537 /* Charts.xcodeproj */,
 				2F28B2911D68B6FA0010C537 /* WhoAreYourFriends */,
 				2F28B2901D68B6FA0010C537 /* Products */,
+				6F99DDD695D411EDC2821CE8 /* Pods */,
+				2BDBCDAA9A3FAA82D6EDB4D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,19 +95,18 @@
 				2F28B29D1D68B6FA0010C537 /* LaunchScreen.storyboard */,
 				2F28B2A01D68B6FA0010C537 /* Info.plist */,
 				2F28B2A61D68CA670010C537 /* HTTPHelper.swift */,
+				2F28B2BE1D691CC80010C537 /* WhoAreYourFriends-Bridging-Header.h */,
 			);
 			path = WhoAreYourFriends;
 			sourceTree = "<group>";
 		};
-		2F28B2AA1D690FFB0010C537 /* Products */ = {
+		6F99DDD695D411EDC2821CE8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2F28B2B11D690FFB0010C537 /* Charts.framework */,
-				2F28B2B31D690FFB0010C537 /* Charts.framework */,
-				2F28B2B51D690FFB0010C537 /* Charts.framework */,
-				2F28B2B71D690FFB0010C537 /* ChartsTests.xctest */,
+				5E1769937855E4F4004EF5F7 /* Pods-WhoAreYourFriends.debug.xcconfig */,
+				BD4C4AC0220A9A1B9BF4F0A5 /* Pods-WhoAreYourFriends.release.xcconfig */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,15 +116,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F28B2A31D68B6FA0010C537 /* Build configuration list for PBXNativeTarget "WhoAreYourFriends" */;
 			buildPhases = (
+				174C5401E7CB6B9BFDAD5BA6 /* [CP] Check Pods Manifest.lock */,
 				2F28B28B1D68B6FA0010C537 /* Sources */,
 				2F28B28C1D68B6FA0010C537 /* Frameworks */,
 				2F28B28D1D68B6FA0010C537 /* Resources */,
 				2F28B2BC1D69106C0010C537 /* Embed Frameworks */,
+				803B7688115E3B796AABEB14 /* [CP] Embed Pods Frameworks */,
+				BB1976649CF4BB7698EECE31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2F28B2BB1D69106C0010C537 /* PBXTargetDependency */,
 			);
 			name = WhoAreYourFriends;
 			productName = WhoAreYourFriends;
@@ -186,49 +159,12 @@
 			mainGroup = 2F28B2861D68B6FA0010C537;
 			productRefGroup = 2F28B2901D68B6FA0010C537 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 2F28B2AA1D690FFB0010C537 /* Products */;
-					ProjectRef = 2F28B2A91D690FFB0010C537 /* Charts.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				2F28B28E1D68B6FA0010C537 /* WhoAreYourFriends */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		2F28B2B11D690FFB0010C537 /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = 2F28B2B01D690FFB0010C537 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2F28B2B31D690FFB0010C537 /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = 2F28B2B21D690FFB0010C537 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2F28B2B51D690FFB0010C537 /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = 2F28B2B41D690FFB0010C537 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		2F28B2B71D690FFB0010C537 /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = 2F28B2B61D690FFB0010C537 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2F28B28D1D68B6FA0010C537 /* Resources */ = {
@@ -243,6 +179,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		174C5401E7CB6B9BFDAD5BA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		803B7688115E3B796AABEB14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhoAreYourFriends/Pods-WhoAreYourFriends-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB1976649CF4BB7698EECE31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhoAreYourFriends/Pods-WhoAreYourFriends-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F28B28B1D68B6FA0010C537 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -256,14 +240,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2F28B2BB1D69106C0010C537 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Charts-iOS";
-			targetProxy = 2F28B2BA1D69106C0010C537 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2F28B2981D68B6FA0010C537 /* Main.storyboard */ = {
@@ -372,25 +348,32 @@
 		};
 		2F28B2A41D68B6FA0010C537 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E1769937855E4F4004EF5F7 /* Pods-WhoAreYourFriends.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = WhoAreYourFriends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.WhoAreYourFriends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhoAreYourFriends/WhoAreYourFriends-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		2F28B2A51D68B6FA0010C537 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD4C4AC0220A9A1B9BF4F0A5 /* Pods-WhoAreYourFriends.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = WhoAreYourFriends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.WhoAreYourFriends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhoAreYourFriends/WhoAreYourFriends-Bridging-Header.h";
 			};
 			name = Release;
 		};

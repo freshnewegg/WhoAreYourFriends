@@ -1,0 +1,6 @@
+framework module Pods_WhoAreYourFriends {
+  umbrella header "Pods-WhoAreYourFriends-umbrella.h"
+
+  export *
+  module * { export * }
+}
