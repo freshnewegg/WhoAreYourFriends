@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FD8972B3A051AF67A689811BB22C39946202C42B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9025163822AAEA7A2D8AC9210D0874A56F62B462" : 0,
+    "FD8972B3A051AF67A689811BB22C39946202C42B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B2177EDF-AFC3-484F-88B6-75D6049C87C0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9025163822AAEA7A2D8AC9210D0874A56F62B462" : "..\/Charts",
+    "FD8972B3A051AF67A689811BB22C39946202C42B" : "WhoAreYourFriends\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WhoAreYourFriends",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WhoAreYourFriends\/WhoAreYourFriends.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/danielgindi\/Charts.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9025163822AAEA7A2D8AC9210D0874A56F62B462"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/freshnewegg\/WhoAreYourFriends.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FD8972B3A051AF67A689811BB22C39946202C42B"
+    }
+  ]
+}
