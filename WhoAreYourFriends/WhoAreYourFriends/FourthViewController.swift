@@ -16,7 +16,10 @@ class FourthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        getAnalysis(combinedFeed)
+        dispatch_async(dispatch_get_main_queue()) {
+            self.getAnalysis(combinedFeed)
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -90,6 +93,8 @@ class FourthViewController: UIViewController {
         let chartDataSet = RadarChartDataSet(yVals: dataEntries, label: "Personalities")
         chartDataSet.colors = ChartColorTemplates.colorful()
         let chartData = BarChartData(xVals: dataPoints, dataSet: chartDataSet)
+        radarChartView.animate(xAxisDuration: 1.0, yAxisDuration: 1.0)
+        radarChartView.descriptionText = ""
         radarChartView.data = chartData
     }
 

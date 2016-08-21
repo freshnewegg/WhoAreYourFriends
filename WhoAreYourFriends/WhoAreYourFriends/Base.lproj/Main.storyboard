@@ -5,24 +5,38 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Political Stance-->
+        <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="Political Stance" id="9pv-A4-QxB" customClass="FirstViewController" customModule="WhoAreYourFriends" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" id="9pv-A4-QxB" customClass="FirstViewController" customModule="WhoAreYourFriends" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN" customClass="PieChartView" customModule="Charts">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EhM-se-syb" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="244" y="35" width="108" height="30"/>
+                                <rect key="frame" x="25" y="513" width="108" height="30"/>
                                 <state key="normal" title="Facebook Login"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdZ-Tw-GK0">
-                                <rect key="frame" x="181" y="100" width="103" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kwj-kJ-Znt">
+                                <rect key="frame" x="27" y="88" width="297" height="267"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wrA-qk-vDx">
+                                        <rect key="frame" x="0.0" y="0.0" width="297" height="267"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHd-4H-3ed">
+                                <rect key="frame" x="25" y="42" width="285" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdZ-Tw-GK0">
+                                <rect key="frame" x="25" y="475" width="103" height="30"/>
                                 <state key="normal" title="Get User Posts"/>
                                 <connections>
                                     <action selector="getUserFeed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="hq1-SD-vfw"/>
@@ -31,24 +45,53 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="cHd-4H-3ed" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="AyD-qB-yFr"/>
+                            <constraint firstItem="fdZ-Tw-GK0" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Cjc-TZ-jas"/>
                             <constraint firstItem="EhM-se-syb" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Nc5-kL-mRI"/>
+                            <constraint firstItem="EhM-se-syb" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Rya-Ys-ChX"/>
+                            <constraint firstItem="kwj-kJ-Znt" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="yg6-Um-CSX"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBarItem key="tabBarItem" title="Political Stance" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="btnFacebook" destination="EhM-se-syb" id="D1C-PE-Jbg"/>
                         <outlet property="pieChartView" destination="tsR-hK-woN" id="IWa-vs-OAd"/>
+                        <outlet property="userImage" destination="wrA-qk-vDx" id="JQk-in-5w0"/>
+                        <outlet property="userNameWelcome" destination="cHd-4H-3ed" id="dSB-AX-PTd"/>
+                        <outlet property="userPostsButton" destination="fdZ-Tw-GK0" id="i8K-hM-em5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="678" y="-344"/>
         </scene>
+        <!--Political Stance-->
+        <scene sceneID="yTP-Hf-LAK">
+            <objects>
+                <viewController title="Political Stance" id="EI1-pL-Qts" customClass="SecondViewController" customModule="WhoAreYourFriends" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YAI-7s-G1w"/>
+                        <viewControllerLayoutGuide type="bottom" id="t4d-N9-MKf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pgs-Lu-P6Y" customClass="PieChartView" customModule="Charts">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Political Stance" image="first" id="ZYv-45-3Uw"/>
+                    <connections>
+                        <outlet property="pieChartView" destination="Pgs-Lu-P6Y" id="BuA-8D-eQj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pxV-xQ-2gD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160" y="491"/>
+        </scene>
         <!--Personality-->
         <scene sceneID="6CP-mD-HYG">
             <objects>
-                <viewController title="Personality" id="OIB-c3-A1x" customClass="ThirdViewController" customModule="WhoAreYourFriends" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Personality" modalTransitionStyle="crossDissolve" id="OIB-c3-A1x" customClass="ThirdViewController" customModule="WhoAreYourFriends" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sa4-oy-WIG"/>
                         <viewControllerLayoutGuide type="bottom" id="USP-qe-iiy"/>
@@ -57,10 +100,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.59999999999999998"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBarItem key="tabBarItem" title="Personality" image="first" selectedImage="first" id="jn4-WZ-8RJ"/>
-                    <value key="contentSizeForViewInPopover" type="size" width="600" height="450"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="500" height="450"/>
                     <connections>
                         <outlet property="barChartView" destination="xib-RX-Hrr" id="9zD-wl-hM0"/>
                     </connections>
@@ -83,6 +127,7 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="egf-Ap-RVj" kind="relationship" relationship="viewControllers" id="shu-jK-duP"/>
                         <segue destination="OIB-c3-A1x" kind="relationship" relationship="viewControllers" id="5l5-8Q-KVM"/>
+                        <segue destination="EI1-pL-Qts" kind="relationship" relationship="viewControllers" id="irG-IQ-aHV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>

@@ -93,7 +93,11 @@ class ThirdViewController: UIViewController {
         let chartDataSet = BarChartDataSet(yVals: dataEntries, label: "Personalities")
         chartDataSet.colors = ChartColorTemplates.colorful()
         let chartData = BarChartData(xVals: dataPoints, dataSet: chartDataSet)
+        
+        barChartView.animate(xAxisDuration: 1.0, yAxisDuration: 1.0)
+        barChartView.descriptionText = ""
         barChartView.data = chartData
+        barChartView.setNeedsDisplay()
     }
 
     
