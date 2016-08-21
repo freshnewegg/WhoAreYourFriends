@@ -8,6 +8,8 @@
 import UIKit
 import Charts
 
+var combinedFeed = ""
+
 class FirstViewController: UIViewController, FBSDKLoginButtonDelegate {
     var userPassword = "test"
     var userName = "edgarwang"
@@ -160,7 +162,7 @@ class FirstViewController: UIViewController, FBSDKLoginButtonDelegate {
             {
                 let resultdict = result as! NSDictionary
                 let data : NSArray = resultdict.objectForKey("data") as! NSArray
-                var combinedFeed = ""
+                //var combinedFeed = ""
                 
                 for i in 0..<data.count {
                     let valueDict : NSDictionary = data[i] as! NSDictionary

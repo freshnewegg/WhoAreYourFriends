@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Political Stance-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="WhoAreYourFriends" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Political Stance" id="9pv-A4-QxB" customClass="FirstViewController" customModule="WhoAreYourFriends" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -22,7 +22,7 @@
                                 <state key="normal" title="Facebook Login"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdZ-Tw-GK0">
-                                <rect key="frame" x="247" y="82" width="103" height="30"/>
+                                <rect key="frame" x="181" y="100" width="103" height="30"/>
                                 <state key="normal" title="Get User Posts"/>
                                 <connections>
                                     <action selector="getUserFeed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="hq1-SD-vfw"/>
@@ -35,7 +35,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Political Stance" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="btnFacebook" destination="EhM-se-syb" id="D1C-PE-Jbg"/>
                         <outlet property="pieChartView" destination="tsR-hK-woN" id="IWa-vs-OAd"/>
@@ -43,47 +43,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="678" y="-344"/>
         </scene>
-        <!--Personas-->
+        <!--Personality-->
         <scene sceneID="6CP-mD-HYG">
             <objects>
-                <viewController id="OIB-c3-A1x" customClass="ThirdViewController" customModule="WhoAreYourFriends" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Personality" id="OIB-c3-A1x" customClass="ThirdViewController" customModule="WhoAreYourFriends" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Sa4-oy-WIG"/>
                         <viewControllerLayoutGuide type="bottom" id="USP-qe-iiy"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xib-RX-Hrr">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="xib-RX-Hrr" customClass="BarChartView" customModule="Charts">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBarItem key="tabBarItem" title="Personas" image="first" selectedImage="first" id="jn4-WZ-8RJ"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Personality" image="first" selectedImage="first" id="jn4-WZ-8RJ"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="600" height="450"/>
+                    <connections>
+                        <outlet property="barChartView" destination="xib-RX-Hrr" id="9zD-wl-hM0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pqB-bY-O9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="490" y="749"/>
-        </scene>
-        <!--Political Stance-->
-        <scene sceneID="wg7-f3-ORb">
-            <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="WhoAreYourFriends" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW" customClass="LineChartView" customModule="Charts">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <tabBarItem key="tabBarItem" title="Political Stance" image="first" id="cPa-gy-q4n"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1166" y="394"/>
+            <point key="canvasLocation" x="490" y="755"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -97,7 +81,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="egf-Ap-RVj" kind="relationship" relationship="viewControllers" id="shu-jK-duP"/>
                         <segue destination="OIB-c3-A1x" kind="relationship" relationship="viewControllers" id="5l5-8Q-KVM"/>
                     </connections>
@@ -114,17 +97,20 @@
                         <viewControllerLayoutGuide type="top" id="tly-0a-12U"/>
                         <viewControllerLayoutGuide type="bottom" id="XDf-Rx-u9H"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8Yc-m4-4G1" customClass="LineChartView" customModule="Charts">
+                    <view key="view" contentMode="scaleToFill" id="8Yc-m4-4G1" customClass="RadarChartView" customModule="Charts">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="Sentiments" image="first" id="50d-7D-S3J"/>
+                    <connections>
+                        <outlet property="radarChartView" destination="8Yc-m4-4G1" id="tjS-Hn-ROO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="neV-kF-h5s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-182" y="749"/>
+            <point key="canvasLocation" x="-176" y="755"/>
         </scene>
     </scenes>
     <resources>
