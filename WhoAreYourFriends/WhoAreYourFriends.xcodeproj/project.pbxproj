@@ -14,6 +14,12 @@
 		2F28B29F1D68B6FA0010C537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F28B29D1D68B6FA0010C537 /* LaunchScreen.storyboard */; };
 		2F28B2A71D68CA670010C537 /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28B2A61D68CA670010C537 /* HTTPHelper.swift */; };
 		2F28B2A81D68D1630010C537 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F28B2941D68B6FA0010C537 /* FirstViewController.swift */; };
+		2F5FBB6F1D69EB2B0029B37C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5FBB6E1D69EB2B0029B37C /* ThirdViewController.swift */; };
+		2F5FBB711D69EB370029B37C /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5FBB701D69EB370029B37C /* FourthViewController.swift */; };
+		2FB6BF3E1D69266200A2FB55 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB6BF3A1D69266200A2FB55 /* Bolts.framework */; };
+		2FB6BF3F1D69266200A2FB55 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB6BF3B1D69266200A2FB55 /* FBSDKCoreKit.framework */; };
+		2FB6BF401D69266200A2FB55 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB6BF3C1D69266200A2FB55 /* FBSDKLoginKit.framework */; };
+		2FB6BF411D69266200A2FB55 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB6BF3D1D69266200A2FB55 /* FBSDKShareKit.framework */; };
 		D7CC3E2734419A2B8DA365D2 /* Pods_WhoAreYourFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59303AAECC524BCD8287DD8 /* Pods_WhoAreYourFriends.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +47,13 @@
 		2F28B2A01D68B6FA0010C537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F28B2A61D68CA670010C537 /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
 		2F28B2BE1D691CC80010C537 /* WhoAreYourFriends-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhoAreYourFriends-Bridging-Header.h"; sourceTree = "<group>"; };
+		2F5FBB6E1D69EB2B0029B37C /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		2F5FBB701D69EB370029B37C /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		2FB6BF3A1D69266200A2FB55 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		2FB6BF3B1D69266200A2FB55 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		2FB6BF3C1D69266200A2FB55 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		2FB6BF3D1D69266200A2FB55 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		2FB6BF421D6926A800A2FB55 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		5E1769937855E4F4004EF5F7 /* Pods-WhoAreYourFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoAreYourFriends.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhoAreYourFriends/Pods-WhoAreYourFriends.debug.xcconfig"; sourceTree = "<group>"; };
 		BD4C4AC0220A9A1B9BF4F0A5 /* Pods-WhoAreYourFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhoAreYourFriends.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhoAreYourFriends/Pods-WhoAreYourFriends.release.xcconfig"; sourceTree = "<group>"; };
 		C59303AAECC524BCD8287DD8 /* Pods_WhoAreYourFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhoAreYourFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +65,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7CC3E2734419A2B8DA365D2 /* Pods_WhoAreYourFriends.framework in Frameworks */,
+				2FB6BF3F1D69266200A2FB55 /* FBSDKCoreKit.framework in Frameworks */,
+				2FB6BF411D69266200A2FB55 /* FBSDKShareKit.framework in Frameworks */,
+				2FB6BF401D69266200A2FB55 /* FBSDKLoginKit.framework in Frameworks */,
+				2FB6BF3E1D69266200A2FB55 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,10 @@
 		2BDBCDAA9A3FAA82D6EDB4D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FB6BF3A1D69266200A2FB55 /* Bolts.framework */,
+				2FB6BF3B1D69266200A2FB55 /* FBSDKCoreKit.framework */,
+				2FB6BF3C1D69266200A2FB55 /* FBSDKLoginKit.framework */,
+				2FB6BF3D1D69266200A2FB55 /* FBSDKShareKit.framework */,
 				C59303AAECC524BCD8287DD8 /* Pods_WhoAreYourFriends.framework */,
 			);
 			name = Frameworks;
@@ -87,6 +108,7 @@
 		2F28B2911D68B6FA0010C537 /* WhoAreYourFriends */ = {
 			isa = PBXGroup;
 			children = (
+				2FB6BF421D6926A800A2FB55 /* Bridging-Header.h */,
 				2F28B2921D68B6FA0010C537 /* AppDelegate.swift */,
 				2F28B2941D68B6FA0010C537 /* FirstViewController.swift */,
 				2F28B2961D68B6FA0010C537 /* SecondViewController.swift */,
@@ -96,6 +118,8 @@
 				2F28B2A01D68B6FA0010C537 /* Info.plist */,
 				2F28B2A61D68CA670010C537 /* HTTPHelper.swift */,
 				2F28B2BE1D691CC80010C537 /* WhoAreYourFriends-Bridging-Header.h */,
+				2F5FBB6E1D69EB2B0029B37C /* ThirdViewController.swift */,
+				2F5FBB701D69EB370029B37C /* FourthViewController.swift */,
 			);
 			path = WhoAreYourFriends;
 			sourceTree = "<group>";
@@ -232,8 +256,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F5FBB711D69EB370029B37C /* FourthViewController.swift in Sources */,
 				2F28B2971D68B6FA0010C537 /* SecondViewController.swift in Sources */,
 				2F28B2931D68B6FA0010C537 /* AppDelegate.swift in Sources */,
+				2F5FBB6F1D69EB2B0029B37C /* ThirdViewController.swift in Sources */,
 				2F28B2A71D68CA670010C537 /* HTTPHelper.swift in Sources */,
 				2F28B2A81D68D1630010C537 /* FirstViewController.swift in Sources */,
 			);
@@ -353,6 +379,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WhoAreYourFriends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.WhoAreYourFriends;
@@ -369,6 +400,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = WhoAreYourFriends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.WhoAreYourFriends;
